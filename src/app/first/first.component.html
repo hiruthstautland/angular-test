@@ -1,0 +1,31 @@
+<pre>{{ date | date: "shortDate" }} </pre>
+<pre>{{ date | date }} </pre>
+<hr/>
+<h3 [ngClass]="isBlue ? 'text-blue' : 'text-red'">
+  {{ text | lowercase }}{{ name | uppercase }}
+</h3>
+<button (click)="onClick()">Change color</button>
+<hr/>
+<span>
+  What is your mood?
+</span>
+<input type="text" [value]="mood" (keyup.enter)="mood = $event.target.value" />
+<h2>Your mood: {{ mood }}</h2>
+<hr/>
+<span>How's the weather? </span>
+<input type="text" [(ngModel)]="weather" />
+<h2>The weather is... {{ weather }}</h2>
+<hr />
+<span>Disabled</span>
+<input type="text" name="" id="" [disabled]="isDisabled" />
+<br />
+<input type="text" name="" id="" [disabled]="disabled" />
+<hr/>
+<ul *ngIf="arrayOfNumbers.length > 0">
+    
+  <li *ngFor="let number of arrayOfNumbers">
+    {{ number | currency: "GBP " }}
+  </li>
+</ul>
+
+<p *ngIf="arrayOfNumbers.length == 0">No data</p>
