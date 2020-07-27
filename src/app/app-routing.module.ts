@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
-// import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { CalculatorComponent } from './calculator/calculator.component';
+import { CardComponent } from './card/card.component';
 import { FirstComponent } from './first/first.component';
 
 const routes: Routes = [
   { path: 'test', component: FirstComponent },
+  { path: 'card', component: CardComponent },
   { path: 'calculator', component: CalculatorComponent },
 ];
 

@@ -9,7 +9,13 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { CardComponent } from './card/card.component';
 
 @NgModule({
-  declarations: [AppComponent, FirstComponent, CalculatorComponent, CardComponent],
+  declarations: [
+    AppComponent,
+    FirstComponent,
+    CalculatorComponent,
+    CardComponent,
+
+  ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,0 +1,8 @@
+nav {
+  position: fixed;
+  top: 0;
+  &__item {
+    display: inline;
+    padding: 1px;
+  }
+}
