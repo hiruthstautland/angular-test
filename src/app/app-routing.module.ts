@@ -5,8 +5,10 @@ import { CardComponent } from './card/card.component';
 import { FirstComponent } from './first/first.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/test', pathMatch: 'full' },
   { path: 'test', component: FirstComponent },
   { path: 'card', component: CardComponent },
+  // { path: 'card/:id', component: CardComponent },
   { path: 'calculator', component: CalculatorComponent },
 ];
 
@@ -16,3 +18,4 @@ const routes: Routes = [
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
+
