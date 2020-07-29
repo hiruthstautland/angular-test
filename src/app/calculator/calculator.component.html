@@ -1,34 +1,120 @@
 <div class="c-calculator">
-    <input type="text" class="c-calculator__screen" value="0" disabled />
-
+  <input type="text" class="c-calculator__screen" [value]="currentNumber" disabled />
   <div class="c-calculator__keys">
-    <button type="button" class="c-calculator__operator" value="+">+</button>
-    <button type="button" class="c-calculator__operator" value="-">-</button>
-    <button type="button" class="c-calculator__operator" value="*">
+    <button (click)="getOperation('+')" type="button" class="c-calculator__operator" value="+">+</button>
+    <button (click)="getOperation('-')" type="button" class="c-calculator__operator" value="-">-</button>
+    <button (click)="getOperation('*')" type="button" class="c-calculator__operator" value="*">
       &times;
     </button>
-    <button type="button" class="c-calculator__operator" value="/">
+    <button  (click)="getOperation('/')" type="button" class="c-calculator__operator" value="/">
       &divide;
     </button>
+    <button
+      (click)="getNumber('7')"
+      type="button"
+      class="c-calculator__btn"
+      value="7"
+    >
+      7
+    </button>
+    <button
+      (click)="getNumber('8')"
+      type="button"
+      class="c-calculator__btn"
+      value="8"
+    >
+      8
+    </button>
+    <button
+      (click)="getNumber('9')"
+      type="button"
+      class="c-calculator__btn"
+      value="9"
+    >
+      9
+    </button>
 
-    <button type="button" class="c-calculator__btn" value="7">7</button>
-    <button type="button" class="c-calculator__btn" value="8">8</button>
-    <button type="button" class="c-calculator__btn" value="9">9</button>
+    <button
+      (click)="getNumber('4')"
+      type="button"
+      class="c-calculator__btn"
+      value="4"
+    >
+      4
+    </button>
+    <button
+      (click)="getNumber('5')"
+      type="button"
+      class="c-calculator__btn"
+      value="5"
+    >
+      5
+    </button>
+    <button
+      (click)="getNumber('6')"
+      type="button"
+      class="c-calculator__btn"
+      value="6"
+    >
+      6
+    </button>
 
-    <button type="button" class="c-calculator__btn" value="4">4</button>
-    <button type="button" class="c-calculator__btn" value="5">5</button>
-    <button type="button" class="c-calculator__btn" value="6">6</button>
-
-    <button type="button" class="c-calculator__btn" value="1">1</button>
-    <button type="button" class="c-calculator__btn" value="2">2</button>
-    <button type="button" class="c-calculator__btn" value="3">3</button>
-
-    <button type="button" class="c-calculator__btn" value="0">0</button>
-    <button type="button" class="c-calculator__decimal" value=".">.</button>
-    <button type="button" class="c-calculator__all-clear" value="all-clear">
+    <button
+      (click)="getNumber('1')"
+      type="button"
+      class="c-calculator__btn"
+      value="1"
+    >
+      1
+    </button>
+    <button
+      (click)="getNumber('2')"
+      type="button"
+      class="c-calculator__btn"
+      value="2"
+    >
+      2
+    </button>
+    <button
+      (click)="getNumber('3')"
+      type="button"
+      class="c-calculator__btn"
+      value="3"
+    >
+      3
+    </button>
+    <button
+      (click)="getNumber('0')"
+      type="button"
+      class="c-calculator__btn"
+      value="0"
+    >
+      0
+    </button>
+    <button
+      (onclick)="getDecimal()"
+      type="button"
+      class="c-calculator__decimal"
+      value="."
+    >
+      .
+    </button>
+    <button
+      (click)="clear()"
+      type="button"
+      class="c-calculator__all-clear"
+      value="all-clear"
+    >
       AC
     </button>
 
-    <button type="button" class="c-calculator__equal-sign" value="=">=</button>
+    <button
+    (click)="getOperation('=')"
+      type="button"
+      class="c-calculator__equal-sign"
+      value="="
+    >
+      =
+    </button>
   </div>
 </div>
