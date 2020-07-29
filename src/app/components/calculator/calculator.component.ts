@@ -24,7 +24,6 @@ export class CalculatorComponent implements OnInit {
   getDecimal() {
     if (!this.currentNumber.includes('.')) {
       this.currentNumber += '.';
-      console.log(this.currentNumber);
     }
   }
   private doCalculation(operation, secondOperation) {
@@ -61,8 +60,6 @@ export class CalculatorComponent implements OnInit {
     }
     this.operator = op;
     this.waitForSecondNumber = true;
-
-    console.log(this.firstOperand);
   }
   public clear() {
     this.currentNumber = '0';
@@ -70,7 +67,6 @@ export class CalculatorComponent implements OnInit {
     this.operator = null;
     this.waitForSecondNumber = false;
   }
-
   constructor() {}
 
   ngOnInit(): void {}

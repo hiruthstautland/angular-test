@@ -1,4 +1,9 @@
-// Sass  ----------------------------------------
+// variables
+$light-gray: #ddd;
+$light-green: rgb(58, 165, 58);
+$dark-green: rgb(13, 87, 13);
+
+// card component  ----------------------------------------
 .c-card {
   display: inline-block;
   width: 100%;
@@ -8,7 +13,7 @@
   transition: all 0.3s ease;
   text-align: left;
   //   background: rgb(248, 246, 246);
-  background: linear-gradient(35deg, #cff, #fcc);
+  background: linear-gradient(35deg, $dark-green, $light-green);
   box-shadow: 0 6px 10px -5px rgba(0, 0, 0, 0.2);
   border: 1px solid rgb(218, 215, 215);
 
@@ -25,6 +30,7 @@
 
   &__body {
     padding: 20px;
+    color: $light-gray;
   }
   &__title {
     font-size: 15px;
@@ -33,10 +39,14 @@
     margin: 0;
     padding: 0;
     text-transform: uppercase;
+    &-age {
+      font-size: 12px;
+    }
   }
 
   &__subtitle {
     font-size: 13px;
+    letter-spacing: 1px;
     margin-top: 5px;
     padding: 0;
   }
@@ -47,5 +57,7 @@
   &__footer {
     padding: 20px;
     border-top: 1px solid #ddd;
+    border-top: 1px solid $light-gray;
+    color: $light-gray;
   }
 }

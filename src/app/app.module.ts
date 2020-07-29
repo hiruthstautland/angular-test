@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { FirstComponent } from './first/first.component';
 import { AppRoutingModule } from './app-routing.module';
-import { CalculatorComponent } from './calculator/calculator.component';
-import { CardComponent } from './card/card.component';
+import { FirstComponent } from './components/first/first.component';
+import { CalculatorComponent } from './components/calculator/calculator.component';
+import { CardComponent } from './components/card/card.component';
+import { TodosComponent } from './components/todos/todos.component';
+import { TodoItemComponent } from './todo-item/todo-item.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,8 @@ import { CardComponent } from './card/card.component';
     FirstComponent,
     CalculatorComponent,
     CardComponent,
-
+    TodosComponent,
+    TodoItemComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

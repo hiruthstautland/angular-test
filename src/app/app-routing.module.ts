@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CalculatorComponent } from './calculator/calculator.component';
-import { CardComponent } from './card/card.component';
-import { FirstComponent } from './first/first.component';
+import { CalculatorComponent } from './components/calculator/calculator.component';
+import { CardComponent } from './components/card/card.component';
+import { FirstComponent } from './components/first/first.component';
+import { TodosComponent } from './components/todos/todos.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/test', pathMatch: 'full' },
   { path: 'test', component: FirstComponent },
   { path: 'card', component: CardComponent },
+  { path: 'todos', component: TodosComponent },
   // { path: 'card/:id', component: CardComponent },
   { path: 'calculator', component: CalculatorComponent },
 ];
@@ -18,4 +20,3 @@ const routes: Routes = [
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
-

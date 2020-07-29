@@ -1,0 +1,25 @@
+<div *ngIf="peopleArray.length > 0" class="container">
+  <article *ngFor="let people of peopleArray" class="c-card">
+    <header class="c-card__header">
+      <img
+        src="http://placehold.it/350x200"
+        class="c-card__image"
+        alt="Card Image"
+      />
+    </header>
+    <div class="c-card__body">
+      <h2 class="c-card__title">
+        {{ people.name | uppercase }}
+        <em class="c-card__title-age"> {{ people.age }} </em>
+      </h2>
+      <p class="c-card__subtitle">
+        {{ people.about }}
+      </p>
+      <p class="c-card__intro">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </p>
+    </div>
+    <footer class="c-card__footer">Footer - {{ people.name }}</footer>
+  </article>
+  <p *ngIf="peopleArray.length === 0">No peole in today</p>
+</div>

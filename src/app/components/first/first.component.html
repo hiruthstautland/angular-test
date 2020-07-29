@@ -1,0 +1,50 @@
+<div class="container">
+  <pre>{{ date | date: "shortDate" }} </pre>
+  <pre>{{ date | date }} </pre>
+  <hr />
+  <div>
+    <h3 [ngClass]="isBlue ? 'text-blue' : 'text-red'">
+      {{ text | lowercase }}{{ name | uppercase }}
+    </h3>
+    <button (click)="onClick()">Change color</button>
+  </div>
+  <hr />
+  <div>
+    <h2>Fun with data binding.</h2>
+    <section>
+      <strong>What is your mood?</strong>
+      <input
+        type="text"
+        [value]="mood"
+        (keyup.enter)="mood = $event.target.value"
+      />
+      <h4>
+        Your mood:<em> {{ mood }}</em>
+      </h4>
+    </section>
+    <hr />
+    <section>
+      <strong>How's the weather?</strong>
+      <input type="text" [(ngModel)]="weather" />
+      <h4>The weather is: {{ weather }}</h4>
+    </section>
+    <hr />
+    <div>
+      Able input:
+      <input type="text" [disabled]="isDisabled" />
+    </div>
+    <br />
+    <div>
+      Disabled:
+      <input type="text" [disabled]="disabled" />
+    </div>
+  </div>
+  <hr />
+  <ul *ngIf="arrayOfNumbers.length > 0">
+    <li *ngFor="let number of arrayOfNumbers">
+      {{ number | currency: "GBP " }}
+    </li>
+  </ul>
+  <p *ngIf="arrayOfNumbers.length == 0">No data</p>
+</div>
+s
