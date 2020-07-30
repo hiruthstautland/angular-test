@@ -4,7 +4,7 @@ import { Todos } from './../../models/Todos';
 @Component({
   selector: 'app-todos',
   templateUrl: './todos.component.html',
-  styleUrls: ['./todos.component.scss', './../../common/style.scss'],
+  styleUrls: ['./todos.component.scss'],
 })
 export class TodosComponent implements OnInit {
   todos: Todos[];

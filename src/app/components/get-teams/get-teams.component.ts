@@ -1,14 +1,21 @@
 import { Component, OnInit } from '@angular/core';
-// import { Championships } from './../../models/UEFA/Championships';
-// import championship from "./../../models/UEFA/page.json";
+import { DataService } from './../../data.service';
+
 @Component({
   selector: 'app-get-teams',
   templateUrl: './get-teams.component.html',
-  styleUrls: ['./get-teams.component.scss'],
+  styleUrls: ['./get-teams.component.scss', './../../common/style.scss'],
 })
 export class GetTeamsComponent implements OnInit {
   // championshipList: championship[] = championship;
-  constructor() {}
+  products: string[] = [];
 
-  ngOnInit(): void {}
+  constructor(private dataService: DataService) {}
+
+  ngOnInit(): void {
+    //subscribing to the service
+    this.dataService.sendGetRequest().subscribe((data: any[]) => {
+      this.products = data;
+    });
+  }
 }
