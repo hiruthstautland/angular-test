@@ -1,0 +1,98 @@
+{
+  "page": "3",
+  "per_page": 10,
+  "total": 125,
+  "total_pages": 13,
+  "data": [
+    {
+      "competition": "UEFA Champions League",
+      "year": 2011,
+      "round": "GroupD",
+      "team1": "Olympique Lyon",
+      "team2": "Dinamo Zagreb",
+      "team1goals": "2",
+      "team2goals": "0"
+    },
+    {
+      "competition": "UEFA Champions League",
+      "year": 2011,
+      "round": "GroupB",
+      "team1": "Trabzonspor",
+      "team2": "Lille OSC",
+      "team1goals": "1",
+      "team2goals": "1"
+    },
+    {
+      "competition": "UEFA Champions League",
+      "year": 2011,
+      "round": "GroupC",
+      "team1": "Otelul Galati",
+      "team2": "SL Benfica",
+      "team1goals": "0",
+      "team2goals": "1"
+    },
+    {
+      "competition": "UEFA Champions League",
+      "year": 2011,
+      "round": "GroupA",
+      "team1": "SSC Napoli",
+      "team2": "Villarreal",
+      "team1goals": "2",
+      "team2goals": "0"
+    },
+    {
+      "competition": "UEFA Champions League",
+      "year": 2011,
+      "round": "GroupH",
+      "team1": "AC Milan",
+      "team2": "Viktoria Plzen",
+      "team1goals": "2",
+      "team2goals": "0"
+    },
+    {
+      "competition": "UEFA Champions League",
+      "year": 2011,
+      "round": "GroupG",
+      "team1": "Shakhtar Donetsk",
+      "team2": "APOEL Nikosia",
+      "team1goals": "1",
+      "team2goals": "1"
+    },
+    {
+      "competition": "UEFA Champions League",
+      "year": 2011,
+      "round": "GroupF",
+      "team1": "Arsenal",
+      "team2": "Olympiacos",
+      "team1goals": "2",
+      "team2goals": "1"
+    },
+    {
+      "competition": "UEFA Champions League",
+      "year": 2011,
+      "round": "GroupH",
+      "team1": "BATE Borisov",
+      "team2": "Barcelona",
+      "team1goals": "0",
+      "team2goals": "5"
+    },
+    {
+      "competition": "UEFA Champions League",
+      "year": 2011,
+      "round": "GroupE",
+      "team1": "Bayer Leverkusen",
+      "team2": "KRC Genk",
+      "team1goals": "2",
+      "team2goals": "0"
+    },
+    {
+      "competition": "UEFA Champions League",
+      "year": 2011,
+      "round": "GroupF",
+      "team1": "Olympique Marseille",
+      "team2": "Borussia Dortmund",
+      "team1goals": "3",
+      "team2goals": "0"
+    }
+  ]
+}
