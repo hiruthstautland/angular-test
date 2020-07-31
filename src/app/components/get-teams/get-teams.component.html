@@ -11,13 +11,15 @@
   <br />
   <mat-spinner *ngIf="products.length === 0"></mat-spinner>
   <div
-    fxLayout="row"
+    fxLayout="row wrap"
     fxLayout.xs="column"
-    fxLayoutWrap
     fxLayoutGap=".5%"
     fxLayoutAlign="center"
   >
-    <mat-card *ngFor="let product of products" style="padding: 0.2em;">
+    <mat-card
+      *ngFor="let product of products"
+      style="padding: 0.2em; min-width: 23%; width:23%;"
+    >
       <mat-card-header>
         <mat-card-title> {{ product.name }} </mat-card-title>
       </mat-card-header>
