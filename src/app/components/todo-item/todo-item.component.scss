@@ -1,0 +1,39 @@
+$primary-dark: #ccc;
+$primary-red: rgb(187, 21, 21);
+
+// remove?
+.btn {
+  display: inline;
+  border: none;
+  padding: 7px 20px;
+  background: $primary-dark;
+}
+// .todo {
+
+// }
+
+.todoitem {
+  padding: 10px;
+  border-bottom: 1px dotted #ccc;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  line-height: 1.4;
+  background: #f4f4f4;
+  &__input {
+    background: lightblue;
+  }
+  &-complete {
+    text-decoration: line-through;
+  }
+  &__btn {
+    &-delete {
+      border: none;
+      border-radius: 50%;
+      padding: 0 10px;
+      cursor: pointer;
+      background: red;
+      background: $primary-red;
+    }
+  }
+}
