@@ -4,7 +4,7 @@ import { DataService } from '../../service/data.service';
 @Component({
   selector: 'app-get-teams',
   templateUrl: './get-teams.component.html',
-  styleUrls: ['./get-teams.component.scss', './../../common/style.scss'],
+  styleUrls: ['./get-teams.component.scss'],
 })
 export class GetTeamsComponent implements OnInit {
   // championshipList: championship[] = championship;
