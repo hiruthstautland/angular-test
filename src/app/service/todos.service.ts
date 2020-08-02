@@ -24,20 +24,26 @@ export class TodosService {
 
   // handle error, now that we have several services we should handle errors globaly
 
-  // Get Todos List
+  // POST Todo
+  public sendPostRequest(todo: any): Observable<any> {
+    return this.httpClient.post<any>(this.REST_API_TODOS, todo, httpOptions);
+  }
+
+  // GET Todos List
   public sendGetRequest(): Observable<Todos[]> {
     return this.httpClient.get<Todos[]>(
       `${this.REST_API_TODOS}${this.todosLimit}`
     );
   }
-  // Toggle completed todos
+  
+  // UDATE completed todos
   public sendPutRequest(todo: Todos): Observable<any> {
     const idUrl = `${this.REST_API_TODOS}/${todo.id}`;
     return this.httpClient.put<any>(idUrl, todo, httpOptions);
   }
-  // Delete Todos
+  // DELETED Todos
   public sendDelRequest(todo: Todos): Observable<Todos> {
     const idUrl = `${this.REST_API_TODOS}/${todo.id}`;
-    return this.httpClient.delete<any>(idUrl, httpOptions);
+    return this.httpClient.delete<Todos>(idUrl, httpOptions);
   }
 }

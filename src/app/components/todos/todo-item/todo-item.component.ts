@@ -10,30 +10,31 @@ import { TodosService } from './../../../service/todos.service';
 export class TodoItemComponent implements OnInit {
   @Input() todo: Todos;
   @Output() deleteTodo: EventEmitter<Todos> = new EventEmitter();
-
+  checked: boolean = false;
   constructor(private todosService: TodosService) {}
 
   ngOnInit(): void {}
 
   // dynamic classes
-  setClasses() {
+  toggleCompleted() {
     let complete = this.todo.completed;
+    this.checked = complete;
     let classes = {
-      todoitem: true,
-      'todoitem-complete': complete,
+      'todoitem__title-complete': complete,
     };
     return classes;
   }
   // onToggle
-  onToggle(todo: Todos) {
+  onToggle() {
     // Toggle in UI
-    todo.completed = !this.todo.completed;
+    this.todo.completed = !this.todo.completed;
     // Toggle on server
     this.todosService
-      .sendPutRequest(todo)
+      .sendPutRequest(this.todo)
       //set in db instead of console.logging
       .subscribe((data) => console.log('completed', data.completed));
   }
+
   onDelete(todo: Todos) {
     this.deleteTodo.emit(todo);
   }

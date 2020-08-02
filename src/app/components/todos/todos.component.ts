@@ -16,8 +16,8 @@ export class TodosComponent implements OnInit {
       this.todos = data;
     });
   }
-  deleteTodoMethode(todo: Todos) {
-    console.log('del', todo.id);
+
+  deleteTodoMethod(todo: Todos) {
     let deletedFromServer: boolean;
     // delete from server
     try {
@@ -31,5 +31,10 @@ export class TodosComponent implements OnInit {
     if (deletedFromServer) {
       this.todos = this.todos.filter((td) => td.id !== todo.id);
     }
+  }
+  addTodoMethod(todo: any) {
+    this.todoService.sendPostRequest(todo).subscribe((todo) => {
+      this.todos.push(todo);
+    });
   }
 }

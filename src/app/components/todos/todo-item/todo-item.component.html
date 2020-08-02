@@ -1,5 +1,10 @@
-<div [ngClass]="setClasses()">
-  <input (change)="onToggle(todo)" class="todoitem__input" type="checkbox" />
-  <p class="todoitem__title">{{ todo.title }}</p>
+<div class="todoitem">
+  <input
+    (change)="onToggle()"
+    ng-checked="checked"
+    class="todoitem__input"
+    type="checkbox"
+  />
+  <em [ngClass]="toggleCompleted()">{{ todo.title }}</em>
   <button (click)="onDelete(todo)" class="todoitem__btn-delete">X</button>
 </div>
