@@ -1,17 +1,6 @@
 $primary-dark: #ccc;
 $primary-red: rgb(187, 21, 21);
 
-// remove?
-.btn {
-  display: inline;
-  border: none;
-  padding: 7px 20px;
-  background: $primary-dark;
-}
-// .todo {
-
-// }
-
 .todoitem {
   padding: 10px;
   border-bottom: 1px dotted #ccc;
@@ -30,7 +19,7 @@ $primary-red: rgb(187, 21, 21);
     &-delete {
       border: none;
       border-radius: 50%;
-      padding: 0 10px;
+      padding: 3px 8px;
       cursor: pointer;
       background: red;
       background: $primary-red;

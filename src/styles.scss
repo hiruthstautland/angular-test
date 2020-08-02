@@ -12,5 +12,13 @@ app-root {
   display: flex;
   flex-flow: column;
 }
+.container {
+  margin: 1em;
+  padding: 1em;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+}
+
 // add angular material
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";

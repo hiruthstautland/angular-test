@@ -6,16 +6,13 @@
   </mat-toolbar>
   <div class="form__search">
     <input class="form__search-input" placeholder="Search Team" type="text" />
-    <button button="submit" mat-raised-button color="primary">Search</button>
+    <button class="form__search-submit" button="submit">
+      Search
+    </button>
   </div>
   <br />
   <mat-spinner *ngIf="products.length === 0"></mat-spinner>
-  <div
-    fxLayout="row wrap"
-    fxLayout.xs="column"
-    fxLayoutGap=".5%"
-    fxLayoutAlign="center"
-  >
+  <div>
     <mat-card
       *ngFor="let product of products"
       style="padding: 0.2em; min-width: 22vw; width: 30vw;"

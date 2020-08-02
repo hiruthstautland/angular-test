@@ -1,14 +1,13 @@
 .nav {
-  padding: .6em;
-  text-align: right;
-  background: rgb(240, 166, 132);
-  font-size: 2em;
+  padding: .4em;
+  background: rgb(163, 104, 8);
+  font-size: 1.2em;
   &__list {
     padding: 0;
   }
   &__item {
     display: inline;
-    padding: 1em;
+    padding: 0 1em;
   }
   &__link {
     color: white;

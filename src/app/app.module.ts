@@ -10,7 +10,9 @@ import { FirstComponent } from './components/first/first.component';
 import { CalculatorComponent } from './components/calculator/calculator.component';
 import { CardComponent } from './components/card/card.component';
 import { TodosComponent } from './components/todos/todos.component';
-import { TodoItemComponent } from './components/todo-item/todo-item.component';
+import { HeaderComponent } from './components/todos/header/header.component';
+import { TodoItemComponent } from './components/todos/todo-item/todo-item.component';
+import { AddTodoComponent } from './components/todos/add-todo/add-todo.component';
 import { GetTeamsComponent } from './components/get-teams/get-teams.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -31,7 +33,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     CalculatorComponent,
     CardComponent,
     TodosComponent,
+    HeaderComponent,
     TodoItemComponent,
+    AddTodoComponent,
     GetTeamsComponent,
   ],
   imports: [

@@ -1,0 +1,20 @@
+$primary-dark: #aaa;
+$primary-light: #bbb;
+
+.form {
+  display: flex;
+  &__input {
+    padding: 10px;
+    flex: 10;
+  }
+  &__btn {
+    flex: 2;
+    border: none;
+    padding: 2px 14px;
+    background: $primary-dark;
+    &:hover {
+      background: $primary-light;
+      cursor: pointer;
+    }
+  }
+}

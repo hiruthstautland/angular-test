@@ -1,10 +1,23 @@
+$primary-dark: #aaa;
+$primary-light: #bbb;
+
 .form__search {
-  margin: 1em 0;
+  display: flex;
+  margin: 0.1em;
   width: 100%;
   &-input {
-    width: 90%;
-    padding: 0.8em;
+    padding: 10px;
+    flex: 10;
     border: none;
     border-bottom: 2px solid darkgray;
+  }
+  &-submit {
+    flex: 2;
+    border-radius: 0;
+    padding: 2px 14px;
+    border: none;
+    &:hover {
+      opacity: 0.8;
+    }
   }
 }
