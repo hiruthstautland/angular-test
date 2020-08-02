@@ -1,5 +1,6 @@
-$primary-dark: #aaa;
+$primary-grey: #aaa;
 $primary-light: #bbb;
+$primary-red: rgb(82, 27, 27);
 
 .form__search {
   display: flex;
@@ -18,6 +19,42 @@ $primary-light: #bbb;
     border: none;
     &:hover {
       opacity: 0.8;
+    }
+  }
+}
+.content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+.card {
+  min-width: 40vw;
+  width: 30vw;
+  padding: 0.2em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  &__title {
+    text-transform: uppercase;
+    letter-spacing: 0.2;
+    color: $primary-red;
+    text-align: center;
+  }
+  &__description {
+    padding: 1em;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+  &__btn {
+    &-action {
+      flex: 2;
+      border-radius: 0;
+      padding: 2px 14px;
+      border: none;
+      &:hover {
+        opacity: 0.8;
+      }
     }
   }
 }

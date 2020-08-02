@@ -8,16 +8,11 @@ html {
   font-family: Roboto, "Helvetica Neue", sans-serif;
   font-size: 16px;
 }
-app-root {
-  display: flex;
-  flex-flow: column;
-}
+
+// set up rules for sx screen
 .container {
   margin: 1em;
   padding: 1em;
-  display: flex;
-  flex-flow: column;
-  justify-content: space-around;
 }
 
 // add angular material

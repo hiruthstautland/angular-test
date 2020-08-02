@@ -17,5 +17,6 @@ export class GetTeamsComponent implements OnInit {
     this.dataService.sendGetRequest().subscribe((data: any[]) => {
       this.products = data;
     });
+    console.log(this.products);
   }
 }
