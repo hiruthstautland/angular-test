@@ -11,6 +11,7 @@ export class TodoItemComponent implements OnInit {
   @Input() todo: Todos;
   @Output() deleteTodo: EventEmitter<Todos> = new EventEmitter();
   checked: boolean = false;
+  updateTodo: any = {};
   constructor(private todosService: TodosService) {}
 
   ngOnInit(): void {}
@@ -29,13 +30,17 @@ export class TodoItemComponent implements OnInit {
     // Toggle in UI
     this.todo.completed = !this.todo.completed;
     // Toggle on server
-    this.todosService
+    //set in db instead of console.logging
+    this.updateTodo = this.todosService
       .sendPutRequest(this.todo)
-      //set in db instead of console.logging
       .subscribe((data) => console.log('completed', data.completed));
   }
 
   onDelete(todo: Todos) {
     this.deleteTodo.emit(todo);
+  }
+
+  ngOnDestroy(): void {
+    this.updateTodo.unsubscribe();
   }
 }

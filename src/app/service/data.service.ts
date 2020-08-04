@@ -3,7 +3,7 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 
 import { throwError } from 'rxjs';
 import { retry, catchError } from 'rxjs/operators';
- 
+
 @Injectable({
   providedIn: 'root',
 })
@@ -28,8 +28,9 @@ export class DataService {
     }
   }
   public sendGetRequest() {
-    return this.httpClient
+    let observable = this.httpClient
       .get(this.REST_API_SERVER)
       .pipe(retry(3), catchError(this.handleError));
+    return observable;
   }
 }

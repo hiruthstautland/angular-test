@@ -9,16 +9,16 @@
   </form>
   <!--  -->
   <div class="container">
-    <div class="content">
+    <section class="content">
       <div class="Loader" *ngIf="products.length === 0">Loading...</div>
-      <section class="card" *ngFor="let product of products">
+      <article class="card" *ngFor="let product of products">
         <h1 class="card__title">{{ product.name }}</h1>
         <span class="card__description">
           <em> {{ product.description }} </em>
           <img class="card__img" src="{{ product.imageUrl }}" />
         </span>
-          <button class="card__btn-action">Read More</button>
-      </section>
-    </div>
+        <button class="card__btn-action">Read More</button>
+      </article>
+    </section>
   </div>
 </div>
