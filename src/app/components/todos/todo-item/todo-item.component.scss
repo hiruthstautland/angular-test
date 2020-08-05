@@ -2,6 +2,7 @@ $primary-grey: rgb(161, 161, 161);
 $primary-red: rgb(82, 27, 27);
 
 .todoitem {
+  min-width: 325px;
   padding: 10px;
   border-bottom: 1px dotted #ccc;
   display: flex;

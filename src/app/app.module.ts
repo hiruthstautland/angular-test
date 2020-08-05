@@ -15,6 +15,7 @@ import { TodoItemComponent } from './components/todos/todo-item/todo-item.compon
 import { AddTodoComponent } from './components/todos/add-todo/add-todo.component';
 import { GetTeamsComponent } from './components/get-teams/get-teams.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ChatFieldComponent } from './components/chat-field/chat-field.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     TodoItemComponent,
     AddTodoComponent,
     GetTeamsComponent,
+    ChatFieldComponent,
   ],
   imports: [
     BrowserModule,

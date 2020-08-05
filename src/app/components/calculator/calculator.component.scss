@@ -10,10 +10,9 @@ $light-grey: #ccc;
   width: 400px;
 
   &__screen {
-    margin: -1px;
     border: none;
     border-radius: 5px 5px 0px 0px;
-    width: 372px;
+    width: 100%;
     font-size: 5rem;
     height: 80px;
     background-color: $primary-black;

@@ -5,6 +5,7 @@ import { CardComponent } from './components/card/card.component';
 import { FirstComponent } from './components/first/first.component';
 import { TodosComponent } from './components/todos/todos.component';
 import { GetTeamsComponent } from './components/get-teams/get-teams.component';
+import { ChatFieldComponent } from './components/chat-field/chat-field.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/test', pathMatch: 'full' },
@@ -14,6 +15,7 @@ const routes: Routes = [
   // { path: 'card/:id', component: CardComponent },
   { path: 'calculator', component: CalculatorComponent },
   { path: 'get-teams', component: GetTeamsComponent },
+  { path: 'chat', component: ChatFieldComponent },
 ];
 
 @NgModule({
