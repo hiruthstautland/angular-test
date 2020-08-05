@@ -1,0 +1,7 @@
+textarea {
+  resize: none;
+}
+textarea[contenteditable] {
+  max-height: 400px;
+  overflow: auto;
+}

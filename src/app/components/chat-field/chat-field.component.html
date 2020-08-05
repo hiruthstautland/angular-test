@@ -1,1 +1,21 @@
-<p>chat-field works!</p>
+<div class="container">
+  <form class="textarea__form">
+    <textarea
+      name="chat__textarea"
+      class="textarea__textarea"
+      placeholder="Type a message..."
+      type="text"
+      [(ngModel)]="textInArea"
+      spellcheck="true"
+      autofocus="true"
+      wrap="soft"
+      [rows]="currentRows"
+    ></textarea>
+  </form>
+  <ul *ngIf="suggestions.length > 0" class="textarea__suggestions">
+    <li *ngFor="let suggested of suggestions">
+      {{ suggested.name }}
+    </li>
+  </ul>
+  <div>{{ getSuggestions() }}</div>
+</div>
